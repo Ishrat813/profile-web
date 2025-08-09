@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ishrat Nisa — Portfolio</title>
+  <meta name="description" content="Portfolio of Ishrat Nisa — B.Sc. Mathematics student | Frontend Developer & Content Writer | Seeking internships" />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#6ee7b7; --accent-2:#60a5fa; --glass: rgba(255,255,255,0.04);
+      --max-width:1100px; --radius:14px; --gap:20px; --pad:24px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;background:linear-gradient(180deg,#071028 0%,var(--bg) 100%);
+      color:#e6eef6; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      padding:40px 20px; display:flex; justify-content:center; align-items:flex-start;
+      line-height:1.45
+    }
+    .wrap{width:100%;max-width:var(--max-width);}
+
+    header{display:flex;gap:var(--gap); align-items:center; margin-bottom:28px}
+    .photo{width:110px;height:110px;border-radius:16px;background:linear-gradient(135deg,var(--accent),var(--accent-2)); display:flex;align-items:center;justify-content:center; flex:0 0 110px; box-shadow:0 6px 30px rgba(35,50,80,0.6)}
+    .photo svg{width:64px;height:64px;filter:drop-shadow(0 2px 6px rgba(0,0,0,0.4));}
+    .intro{flex:1}
+    h1{font-size:1.9rem;margin:0 0 6px}
+    .title{color:var(--accent-2);font-weight:600;margin-bottom:8px}
+    .contact{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:0.95rem}
+    a.contact-link{color:var(--muted);text-decoration:none;display:inline-flex;gap:8px;align-items:center}
+    a.contact-link:hover{color:var(--accent)}
+
+    .layout{display:grid;grid-template-columns:1fr 360px;gap:28px}
+    @media (max-width:880px){.layout{grid-template-columns:1fr;}.photo{margin:auto}}
+
+    /* Main Card */
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius); padding:var(--pad);box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    .section{margin-bottom:18px}
+    .heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .heading h2{margin:0;font-size:1.05rem}
+    .muted{color:var(--muted);font-size:0.95rem}
+
+    .summary p{margin:0;font-size:0.98rem}
+
+    .skills{display:flex;gap:12px;flex-wrap:wrap}
+    .pill{background:var(--glass);padding:8px 12px;border-radius:999px;font-weight:600;font-size:0.92rem;color:var(--accent-2);}
+
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    @media (max-width:640px){.projects{grid-template-columns:1fr}}
+    .project{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
+    .project h3{margin:0 0 6px;font-size:0.98rem}
+    .meta{color:var(--muted);font-size:0.9rem}
+    .btn{display:inline-flex;gap:8px;align-items:center;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#04243b;border:none;font-weight:700;cursor:pointer}
+    .ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:8px 12px;border-radius:8px}
+
+    /* Sidebar */
+    aside .card{position:sticky;top:40px}
+    .side-list{display:flex;flex-direction:column;gap:10px}
+    .small{font-size:0.9rem;color:var(--muted)}
+    .sep{height:1px;background:rgba(255,255,255,0.03);margin:8px 0;border-radius:2px}
+
+    footer{margin-top:20px;color:var(--muted);font-size:0.9rem;text-align:center}
+
+    /* Utilities */
+    .row{display:flex;gap:12px;align-items:center}
+    .space{flex:1}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="photo" aria-hidden>
+        <!-- initials icon -->
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="white" fill-opacity="0.06"/>
+          <text x="50" y="58" text-anchor="middle" font-size="36" font-weight="700" fill="#05212b">IN</text>
+        </svg>
+      </div>
+      <div class="intro">
+        <h1>ISHRAT NISA</h1>
+        <div class="title">B.Sc. Mathematics Student • Frontend Developer & Content Writer</div>
+        <div class="contact">
+          <a class="contact-link" href="mailto:ishratnisa@outlook.com">✉ ishratnisa@outlook.com</a>
+          <a class="contact-link" href="mailto:ishratnisa1308@gmail.com">✉ ishratnisa1308@gmail.com</a>
+          <a class="contact-link" href="https://www.linkedin.com/in/ishrat-nisa-358664365" target="_blank" rel="noopener">🔗 LinkedIn</a>
+          <a class="contact-link" href="https://github.com/Ishrat813" target="_blank" rel="noopener">🐙 GitHub</a>
+          <div class="small">📍 Sikar, Rajasthan, India</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <main>
+        <section class="card section summary">
+          <div class="heading"><h2>About Me</h2><div class="muted">Seeking internship • Expected graduation: 2028</div></div>
+          <p>
+            I am a passionate and ambitious B.Sc. Mathematics student with strong interests in frontend web development and content writing. I combine a creative mindset with analytical thinking to build responsive, user-friendly websites and craft engaging written content. Fluent in Hindi and English, I communicate clearly and collaborate effectively.
+          </p>
+          <p style="margin-top:10px">
+            I have built multiple projects showcased on my GitHub — focusing on clean code, accessible UI, and useful features. I am eager to learn, adapt quickly, and contribute creative ideas in a real-world internship.
+          </p>
+          <div style="margin-top:14px">
+            <button class="btn" onclick="window.open('https://github.com/Ishrat813','_blank')">View GitHub →</button>
+            <button class="ghost" onclick="window.print()">Download Resume (Print as PDF)</button>
+          </div>
+        </section>
+
+        <section class="card section">
+          <div class="heading"><h2>Skills</h2><div class="muted">Technical & interpersonal</div></div>
+          <div class="skills">
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">JavaScript (Basics)</span>
+            <span class="pill">Responsive Design</span>
+            <span class="pill">Git & GitHub</span>
+            <span class="pill">SEO Basics</span>
+            <span class="pill">Content Writing</span>
+            <span class="pill">Canva & Figma (Basic)</span>
+            <span class="pill">Communication (Hindi & English)</span>
+            <span class="pill">Creative Problem-Solving</span>
+            <span class="pill">Time Management</span>
+          </div>
+        </section>
+
+        <section class="card section">
+          <div class="heading"><h2>Projects</h2><div class="muted">Selected work from GitHub</div></div>
+          <div class="projects">
+            <article class="project">
+              <h3>Portfolio Website</h3>
+              <div class="meta">HTML, CSS — Responsive personal site to showcase projects, skills, and contact.</div>
+              <div style="margin-top:8px"><a class="contact-link" href="https://github.com/Ishrat813" target="_blank">View on GitHub →</a></div>
+            </article>
+            <article class="project">
+              <h3>Interactive Web Pages</h3>
+              <div class="meta">Mini apps & UI components built with vanilla JS — forms, sliders, responsive layouts.</div>
+              <div style="margin-top:8px"><a class="contact-link" href="https://github.com/Ishrat813" target="_blank">View on GitHub →</a></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="card section">
+          <div class="heading"><h2>Certifications & Learning</h2><div class="muted">Ongoing self-development</div></div>
+          <ul class="small" style="margin:0;padding-left:18px">
+            <li>HTML & CSS for Beginners — FreeCodeCamp (Online)</li>
+            <li>Introduction to JavaScript — W3Schools (Online)</li>
+            <li>Self-learning: SEO, UI/UX basics, frontend frameworks (ongoing)</li>
+          </ul>
+        </section>
+
+        <section class="card section">
+          <div class="heading"><h2>Achievements</h2><div class="muted">Academic & personal</div></div>
+          <ul class="small" style="margin:0;padding-left:18px">
+            <li>Contributed articles to college magazine and participated in presentation events.</li>
+            <li>Active participant in college tech-workshops and seminars.</li>
+          </ul>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <div class="heading"><h2>Contact</h2><div class="muted">Let's connect</div></div>
+          <div class="side-list small">
+            <div><strong>Email:</strong><br><a href="mailto:ishratnisa@outlook.com">ishratnisa@outlook.com</a></div>
+            <div><strong>Alternate:</strong><br><a href="mailto:ishratnisa1308@gmail.com">ishratnisa1308@gmail.com</a></div>
+            <div><strong>LinkedIn:</strong><br><a href="https://www.linkedin.com/in/ishrat-nisa-358664365" target="_blank">ishrat-nisa-358664365</a></div>
+            <div><strong>GitHub:</strong><br><a href="https://github.com/Ishrat813" target="_blank">Ishrat813</a></div>
+            <div class="sep"></div>
+            <div><strong>Education</strong><br>Sona Devi Shetiya Girls PG College<br>B.Sc. Mathematics — Expected 2028</div>
+            <div class="sep"></div>
+            <div><strong>Looking for</strong><br>Internship — Frontend Development & Content Writing</div>
+            <div class="sep"></div>
+            <div><strong>Languages</strong><br>Hindi (Fluent)<br>English (Fluent)</div>
+          </div>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="card small">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+            <strong>Quick Links</strong>
+            <a class="contact-link" href="https://github.com/Ishrat813" target="_blank">View all projects →</a>
+          </div>
+          <div class="muted" style="font-size:0.9rem">Want this site as a file? Click below to download the HTML.</div>
+          <div style="margin-top:12px">
+            <button class="btn" onclick="downloadHTML()">Download HTML</button>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer>
+      Designed & built by Ishrat Nisa • Created for internship applications — customize as needed.
+    </footer>
+  </div>
+
+  <script>
+    function downloadHTML(){
+      const html = document.documentElement.outerHTML;
+      const blob = new Blob([html],{type:'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'IshratNisa_Portfolio.html'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
